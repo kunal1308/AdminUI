@@ -1,0 +1,9 @@
+td {
+    margin: 0rem;
+    padding: 0%;
+   white-space: normal;
+   word-wrap: break-word;
+}
+.editable-input {
+    width: 90%;
+}

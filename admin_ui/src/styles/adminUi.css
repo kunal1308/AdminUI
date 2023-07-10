@@ -1,0 +1,8 @@
+.ui-container {
+    margin:1rem,2rem;
+}
+@media screen and (max-width: 900px) {
+    .ui-container{
+      margin: 0.5rem 0.5rem;
+    }
+  }

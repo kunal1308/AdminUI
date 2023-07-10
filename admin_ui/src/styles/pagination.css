@@ -1,0 +1,9 @@
+.pagination-buttons {
+    display: flex;
+    justify-content: space-evenly;
+}
+@media screen and (max-width: 768px) {
+    .pagination-buttons {
+        flex-wrap: wrap;
+    }
+}
