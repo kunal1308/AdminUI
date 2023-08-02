@@ -1,15 +1,17 @@
 .table-container {
     overflow-x: auto;
     overflow-y: auto;
-    height: 23rem;
+    height: 75vh;
+  
   }
   
   table {
-    width: 97%;
+    width:97%;
     border-collapse: collapse;
     text-align: center;
-    padding:1rem;
-    margin:1rem;
+    margin-left:1rem;
+    margin-bottom: 1rem;
+    
   }
   
   thead tr th {
@@ -26,11 +28,13 @@
   }
 
   th,td {
-    border: 1px solid grey;
-    padding:0.1rem;
-    margin:0.3rem;
+    border: 1px solid grey; 
+    overflow-wrap: break-word;
+    border-radius: 2%;
   }
-  
+  .selected {
+  background-color: lightgray;
+}
   @media screen and (max-width: 768px) {
     tr,td {
       margin: 0rem;
@@ -55,9 +59,9 @@
   }
   @media screen and (min-width: 1200px) {
     table {
-      table-layout: fixed;
+      table-layout: fixed; 
     }
     .table-contianer {
-      height: 78vh;
+      height: 78v
     }
   }

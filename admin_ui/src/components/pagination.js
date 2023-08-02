@@ -37,6 +37,7 @@ const Pagination = ({
     paginationButtons.push(
       <button
         key={i}
+        id="pagination"
         onClick={() => handlePageChange(i)}
         className={currentPage === i ? "active" : ""}
       >
@@ -57,30 +58,30 @@ const Pagination = ({
         </button>
       </section>
       <div>
-        <button
+        <button className="page-buttons"
           disabled={currentPage === 1}
           onClick={() => handlePageChange(1)}
         >
-          First page
+          &laquo;
         </button>
-        <button
+        <button className="page-buttons"
           disabled={currentPage === 1}
           onClick={() => handlePageChange(currentPage - 1)}
         >
-          Previous page
+          &lt;
         </button>
         {paginationButtons}
-        <button
+        <button className="page-buttons"
           disabled={currentPage === totalPages}
           onClick={() => handlePageChange(currentPage + 1)}
         >
-          Next page
+          &gt;
         </button>
-        <button
+        <button className="page-buttons"
           disabled={currentPage === totalPages}
           onClick={() => handlePageChange(totalPages)}
         >
-          Last page
+          &raquo;
         </button>
       </div>
     </section>

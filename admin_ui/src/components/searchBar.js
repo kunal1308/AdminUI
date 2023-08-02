@@ -24,7 +24,6 @@ const SearchBar = ({
 
   return (
     <div className="placeholder">
-      <div>
         <input
           type="text"
           id="placeholder"
@@ -32,8 +31,7 @@ const SearchBar = ({
           value={searchData}
           onChange={(event) => handleSearch(event)}
         />
-      </div>
-      {users.length === 0 && <h4>No users found</h4>}
+        {users.length === 0 && <h4>No users found</h4>}
     </div>
   );
 };
